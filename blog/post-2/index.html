@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="This is meta description">
   <meta name="author" content="皮皮阿包">
   <meta name="generator" content="Hugo 0.97.1" />
 
@@ -125,28 +125,112 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/html-css"
-          class="text-primary">HTML &amp; css</a>
-        
-        <h2>alan的python作品</h2>
+        <h2></h2>
         <div class="mb-3 post-meta">
           <span>By 皮皮阿包</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>17 April 2022</span>
+          <span>01 January 0001</span>
           
         </div>
         
-        <img src="https://bun2004.github.io/images/featured-post/python2.jpg" class="img-fluid w-100 mb-4" alt="alan的python作品">
-        
         <div class="content mb-5">
-          <h5 id="heading"></h5>
-<p>我是alan，這是我利用python來做出撲克牌21點遊戲，玩家可遵循指引和電腦莊家有所交流</p>
-<p><strong>(在這裡我不使用Python的程式原型是因為黑字會被背景覆蓋掉)</strong></p>
-<blockquote>
-<p><a href="/blog/post-1">python作品</a></p>
-</blockquote>
-
+          <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">random</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">def</span> <span style="color:#0a0">printcard</span>(c):
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">for</span> i <span style="color:#00a">in</span> c:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">if</span> i //<span style="color:#099">13</span>==<span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#0aa">chr</span>(<span style="color:#099">9824</span>),end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">elif</span> i //<span style="color:#099">13</span>==<span style="color:#099">1</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#0aa">chr</span>(<span style="color:#099">9829</span>),end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">elif</span> i//<span style="color:#099">13</span>==<span style="color:#099">2</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#0aa">chr</span>(<span style="color:#099">9830</span>),end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#0aa">chr</span>(<span style="color:#099">9827</span>),end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">if</span> i%<span style="color:#099">13</span>==<span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;A&#34;</span>,end=<span style="color:#a50">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">elif</span> i%<span style="color:#099">13</span>==<span style="color:#099">10</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;J&#34;</span>,end=<span style="color:#a50">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">elif</span> i%<span style="color:#099">13</span>==<span style="color:#099">11</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;Q&#34;</span>,end=<span style="color:#a50">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">elif</span> i%<span style="color:#099">13</span>==<span style="color:#099">12</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;K&#34;</span>,end=<span style="color:#a50">&#34; &#34;</span>) 
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(i%<span style="color:#099">13</span>+<span style="color:#099">1</span>,end=<span style="color:#a50">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>()       
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">def</span> <span style="color:#0a0">printmassage</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;玩家的排:&#34;</span>,end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    printcard(playercard)
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;玩家的牌面點數:&#34;</span>,<span style="color:#0aa">sum</span>(playerpoint))
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;莊家的排:&#34;</span>,end=<span style="color:#a50">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    printcard(bankercard)
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;裝家的排面點數:&#34;</span>,<span style="color:#0aa">sum</span>(bankerpoint))
+</span></span><span style="display:flex;"><span>    <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;***********************************************&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">def</span> <span style="color:#0a0">cardpoint</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">if</span> x%<span style="color:#099">13</span>==<span style="color:#099">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">return</span> <span style="color:#099">11</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">elif</span> x%<span style="color:#099">13</span>&gt;<span style="color:#099">9</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">return</span> <span style="color:#099">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">return</span> x%<span style="color:#099">13</span>+<span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">def</span> <span style="color:#0a0">deal</span>(gamercard,gamerpoint):
+</span></span><span style="display:flex;"><span>    temp=card.pop()
+</span></span><span style="display:flex;"><span>    gamercard.append(temp)
+</span></span><span style="display:flex;"><span>    gamerpoint.append(cardpoint(temp))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>card=<span style="color:#0aa">list</span>(<span style="color:#0aa">range</span>(<span style="color:#099">0</span>,<span style="color:#099">52</span>))
+</span></span><span style="display:flex;"><span>random.shuffle(card)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>playercard=<span style="color:#0aa">list</span>()
+</span></span><span style="display:flex;"><span>playerpoint=<span style="color:#0aa">list</span>()
+</span></span><span style="display:flex;"><span>bankercard=<span style="color:#0aa">list</span>()
+</span></span><span style="display:flex;"><span>bankerpoint=<span style="color:#0aa">list</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">for</span> i <span style="color:#00a">in</span> <span style="color:#0aa">range</span>(<span style="color:#099">2</span>):
+</span></span><span style="display:flex;"><span>    deal(playercard,playerpoint)
+</span></span><span style="display:flex;"><span>deal(bankercard,bankerpoint) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printmassage()   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a">while</span> <span style="color:#00a">True</span>:
+</span></span><span style="display:flex;"><span>    ans=<span style="color:#0aa">input</span>(<span style="color:#a50">&#34;玩家要加牌嗎(Y/N)?:&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">if</span> ans==<span style="color:#a50">&#34;N&#34;</span> <span style="color:#00a">or</span> ans==<span style="color:#a50">&#34;n&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">break</span>
+</span></span><span style="display:flex;"><span>    deal(playercard,playerpoint) 
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">if</span> <span style="color:#0aa">sum</span>(playerpoint)&gt;<span style="color:#099">21</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">if</span> <span style="color:#099">11</span> <span style="color:#00a">in</span> playerpoint:
+</span></span><span style="display:flex;"><span>            playerpoint[playerpoint.index(<span style="color:#099">11</span>)]=<span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>            printmassage()
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">else</span>:
+</span></span><span style="display:flex;"><span>            printmassage()
+</span></span><span style="display:flex;"><span>            <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;玩家爆牌，莊家獲勝&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#00a">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">else</span>:
+</span></span><span style="display:flex;"><span>        printmassage()
+</span></span><span style="display:flex;"><span><span style="color:#00a">if</span> <span style="color:#0aa">sum</span>(playerpoint)&lt;<span style="color:#099">22</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">while</span> <span style="color:#0aa">sum</span>(bankerpoint)&lt;<span style="color:#099">17</span>:
+</span></span><span style="display:flex;"><span>        deal(bankercard,bankerpoint)
+</span></span><span style="display:flex;"><span>        <span style="color:#00a">if</span> <span style="color:#0aa">sum</span>(bankerpoint)&gt;<span style="color:#099">21</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#00a">if</span> <span style="color:#099">11</span> <span style="color:#00a">in</span> bankerpoint:
+</span></span><span style="display:flex;"><span>                bankerpoint[bankerpoint.index(<span style="color:#099">11</span>)]=<span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>        printmassage()  
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">if</span> <span style="color:#0aa">sum</span>(bankerpoint)&gt;<span style="color:#099">21</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;莊家爆牌，玩家勝利&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">elif</span> <span style="color:#0aa">sum</span>(playerpoint)&gt;<span style="color:#0aa">sum</span>(bankerpoint):
+</span></span><span style="display:flex;"><span>        <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;玩家勝利&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">elif</span> <span style="color:#0aa">sum</span>(playerpoint)&lt;<span style="color:#0aa">sum</span>(bankerpoint):
+</span></span><span style="display:flex;"><span>        <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;莊家勝利&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#00a">elif</span> <span style="color:#0aa">sum</span>(playerpoint) == <span style="color:#0aa">sum</span>(bankerpoint):
+</span></span><span style="display:flex;"><span>        <span style="color:#0aa">print</span>(<span style="color:#a50">&#34;和局&#34;</span>)
+</span></span></code></pre></div>
         </div>
 
         
@@ -197,11 +281,6 @@
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/html-css/">HTML css</a>
-          </li>
-        </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Quick Links</h6>

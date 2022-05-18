@@ -9,13 +9,12 @@
     <lastBuildDate>Sun, 17 Apr 2022 14:08:47 +0800</lastBuildDate><atom:link href="https://bun2004.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>alan的python作品</title>
-      <link>https://bun2004.github.io/blog/post-2/</link>
+      <link>https://bun2004.github.io/blog/post-1/</link>
       <pubDate>Sun, 17 Apr 2022 14:08:47 +0800</pubDate>
       
-      <guid>https://bun2004.github.io/blog/post-2/</guid>
-      <description> 我是alan，這是我利用python來做出撲克牌21點遊戲，玩家可遵循指引和電腦莊家有所交流
-(在這裡我不使用Python的程式原型是因為黑字會被背景覆蓋掉)
- python作品
+      <guid>https://bun2004.github.io/blog/post-1/</guid>
+      <description> 我是alan，這是我利用python來做出撲克牌21點遊戲，玩家可遵循指引和電腦莊家有所交流 在未來我可以寫入更多的規則，並且更新一些需要改進的地方也可以撰寫更多新的遊戲來增加我撰寫程式的經驗。
+ 我的python作品
  </description>
     </item>
     
